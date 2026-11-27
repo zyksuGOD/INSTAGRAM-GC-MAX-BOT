@@ -5,15 +5,11 @@ services:
     buildCommand: pip install -r requirements.txt
     startCommand: python bot.py
     envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
       - key: IG_USERNAME
         value: iy7qt
       - key: GROUP_THREAD_ID
         value: "1158412246605899"
       - key: ADMIN_USERNAME
         value: eren_ye4gerrr
-      - key: PYTHON_VERSION
-        value: 3.11.0
-    disk:
-      name: bot-state
-      mountPath: /var/data
-      sizeGB: 1
